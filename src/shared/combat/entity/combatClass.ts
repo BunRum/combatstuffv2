@@ -88,6 +88,7 @@ export class combatClassBase {
             func(state)
         } // n()
         this.Keybinds.set(input, middle);
+        print("possessed")
         this.bindInputs();
     }
 

@@ -89,7 +89,7 @@ export class combatClassBase {
         } // n()
         this.Keybinds.set(input, middle);
         print("possessed")
-        print("soaaaa")
+        print("saoaaaa")
         this.bindInputs();
     }
 

@@ -1,0 +1,44 @@
+{
+  "name": "combatstuffv2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "rbxtsc",
+    "depend": "npx madge --circular --extensions ts ./src",
+    "start:rojo": "rojo serve",
+    "start:watch": "rbxtsc -w & npm run rojo",
+    "start": "concurrently npm:start:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@rbxts/compiler-types": "^3.0.0-types.0",
+    "@rbxts/types": "^1.0.839",
+    "@typescript-eslint/eslint-plugin": "^8.25.0",
+    "@typescript-eslint/parser": "^8.25.0",
+    "concurrently": "^9.1.2",
+    "eslint": "^9.21.0",
+    "eslint-config-prettier": "^10.0.2",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-roblox-ts": "^0.0.36",
+    "prettier": "^3.5.2",
+    "roblox-ts": "^3.0.0",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@rbxts/altmake": "^0.1.5",
+    "@rbxts/better-gizmos": "^0.0.4",
+    "@rbxts/iris": "^2.3.1-ts.1",
+    "@rbxts/net": "^3.0.10",
+    "@rbxts/object-utils": "^1.0.4",
+    "@rbxts/services": "^1.5.5",
+    "@rbxts/t": "^3.2.1",
+    "madge": "^8.0.0",
+    "rbxts-transformer-access": "^1.1.2",
+    "rbxts-transformer-setget": "^2.0.0",
+    "rbxts-transformer-t": "^1.1.5",
+    "rbxts-transformer-t-new-new": "^0.2.0"
+  }
+}

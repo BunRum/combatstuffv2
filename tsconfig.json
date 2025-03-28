@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    // required
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
+    "jsx": "react",
+    "jsxFactory": "React.createElement",
+    "jsxFragmentFactory": "React.Fragment",
+    "module": "commonjs",
+    "moduleResolution": "Node",
+    "noLib": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleDetection": "force",
+    "strict": true,
+    "target": "ESNext",
+    "typeRoots": [
+      "node_modules/@rbxts",
+      "node_modules/@rbxts/transformer-access",
+      "node_modules/@rbxts/rbxts-transformer-setget"
+    ],
+    // "typeRoots": ["node_modules/@rbxts", "node_modules/rbxts-transformer-t-new-new/index"],
+
+    // configurable
+    "rootDir": "src",
+    "outDir": "out",
+    "baseUrl": "src",
+    "useUnknownInCatchVariables": false,
+    "plugins": [
+      // {
+      // 	"transform": "rbxts-transformer-t-new-new",
+      // }
+      {
+        "transform": "rbxts-transformer-access"
+      },
+      {
+        "transform": "rbxts-transformer-setget"
+      }
+    ]
+  }
+}
